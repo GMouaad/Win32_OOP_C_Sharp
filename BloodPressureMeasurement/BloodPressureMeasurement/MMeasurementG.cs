@@ -11,9 +11,8 @@ namespace BloodPressureMeasurement
         private int MpulseG;
         private int MsystolicG;
         private int MdiastolicG;
-        private DateTime MtheTimeG
-
-public MMeasurementG(int MpulseG, int MdiastolicG, int MsystolicG, DateTime MtheTimeG)
+        private DateTime MtheTimeG;
+        public MMeasurementG(int MpulseG, int MdiastolicG, int MsystolicG, DateTime MtheTimeG)
         {
             this.MpulseG = MpulseG;
             this.MsystolicG = MsystolicG;
@@ -38,10 +37,11 @@ public MMeasurementG(int MpulseG, int MdiastolicG, int MsystolicG, DateTime Mthe
         }
         public void printValues()
         {
-            Console.WriteLine("Pulse" + MpulseG);
-            Console.WriteLine("Systolic blood pressure" + MsystolicG);
-            Console.WriteLine("Diastolic blood pressure" + MdiastolicG);
-            Console.WriteLine("Date" + MtheTimeG);
+            Console.WriteLine("Pulse : " + MpulseG);
+            Console.WriteLine("Systolic blood pressure : " + MsystolicG);
+            Console.WriteLine("Diastolic blood pressure : " + MdiastolicG);
+            Console.WriteLine("Date : " + MtheTimeG);
+            Console.WriteLine("");
         }
     }
 }

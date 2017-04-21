@@ -19,17 +19,28 @@ namespace BloodPressureMeasurement
             Application.Run(new Form1());
 
             ///////////
-            MGenericTestG Test1 = new MGenericTestG();
-            MGenericTestG Test2 = new MGenericTestG();
-            MGenericTestG Test3 = new MGenericTestG();
+            MGenericTestG Test1 = new MGenericTestG("patientName", DateTime.Now);
+            MGenericTestG Test2 = new MGenericTestG("Mouaad", DateTime.Now);
+            MGenericTestG Test3 = new MGenericTestG("Asmae", DateTime.Now);
 
-            Test1.name = "Testing function 1";
-            Test2.name = "Testing function 2";
-            Test3.name = "Testing function 3";
+            Test1.setName("patientName");
+            Test2.setName("Mouaad");
+            Test3.setName("Asmae");
 
-            MGenericTestG.print(Test1);
-            MGenericTestG.print(Test2);
-            MGenericTestG.print(Test3);
+            Test1.print();
+            Test2.print();
+            Test3.print();
+
+            Random rand = new Random();
+
+            MMeasurementG Measurement1 = new MMeasurementG(rand.Next(70, 140), rand.Next(40, 120), rand.Next(40, 80), DateTime.Now);
+            MMeasurementG Measurement2 = new MMeasurementG(rand.Next(70, 140), rand.Next(40, 120), rand.Next(40, 80), DateTime.Now);
+            MMeasurementG Measurement3 = new MMeasurementG(rand.Next(70, 140), rand.Next(40, 120), rand.Next(40, 80), DateTime.Now);
+
+            Measurement1.printValues();
+            Measurement2.printValues();
+            Measurement3.printValues();
+
         }
     }
 }

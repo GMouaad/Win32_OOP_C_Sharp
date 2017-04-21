@@ -14,7 +14,7 @@ namespace BloodPressureMeasurement
         public MGenericTestG(string name, DateTime theTime)
         {
             this.name = "No Name given!";
-            theTime = DateTime(0, 0, 0);
+            theTime = DateTime.Now;
         }
         //set value of name 
         //string name { get; set; }
@@ -30,12 +30,11 @@ namespace BloodPressureMeasurement
 
         public DateTime MgetTimeG()
         {
-            return
-        
-}
-        public static void print()
+            return date;
+        }
+        public void print()
         {
-            Console.Writeline("Name :" + name);
+            Console.WriteLine("Name :{0}\n", name);
         }
 
     }
