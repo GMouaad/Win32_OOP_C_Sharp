@@ -16,5 +16,10 @@ namespace BloodPressureMeasurement
         {
             InitializeComponent();
         }
+
+        private void StartBtnClicked(object sender, EventArgs e)
+        {
+            Color c = Color.FromArgb(255, 255, 255);
+        }
     }
 }
