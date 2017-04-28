@@ -21,5 +21,10 @@ namespace BloodPressureMeasurement
         {
             Color c = Color.FromArgb(255, 255, 255);
         }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
