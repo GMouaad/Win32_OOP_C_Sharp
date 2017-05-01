@@ -37,350 +37,239 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-
             this.StartTestButton = new System.Windows.Forms.Button();
-
             this.button1 = new System.Windows.Forms.Button();
-
-            //this.button2 = new System.Windows.Forms.Button();
-
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.newTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.startTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.editTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.printTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.measurementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.readMeasurementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.loadMeasurementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.storeDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
+            this.aboutBloodPressureMeasurementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MexitBtnG = new System.Windows.Forms.Button();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.Logo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-
+            this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
-
             // 
-
             // StartTestButton
-
             // 
-
-            this.StartTestButton.Location = new System.Drawing.Point(29, 123);
-
+            this.StartTestButton.BackColor = System.Drawing.Color.Azure;
+            this.StartTestButton.Location = new System.Drawing.Point(32, 17);
             this.StartTestButton.Name = "StartTestButton";
-
-            this.StartTestButton.Size = new System.Drawing.Size(116, 23);
-
+            this.StartTestButton.Size = new System.Drawing.Size(125, 23);
             this.StartTestButton.TabIndex = 0;
-
             this.StartTestButton.Text = "Start Test";
-
-            this.StartTestButton.UseVisualStyleBackColor = true;
-
-            this.StartTestButton.Click += new System.EventHandler(this.StartBtnClicked);
-
+            this.StartTestButton.UseVisualStyleBackColor = false;
+            this.StartTestButton.Click += new System.EventHandler(this.MstartG_Click);
             // 
-
             // button1
-
             // 
-
-            this.button1.Location = new System.Drawing.Point(29, 152);
-
+            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.Location = new System.Drawing.Point(32, 57);
             this.button1.Name = "button1";
-
-            this.button1.Size = new System.Drawing.Size(116, 23);
-
+            this.button1.Size = new System.Drawing.Size(125, 23);
             this.button1.TabIndex = 1;
-
             this.button1.Text = "Read Measurement";
-
-            this.button1.UseVisualStyleBackColor = true;
-
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.MreadG_Click);
             // 
-
-            // button2
-
-            // 
-
-            /*this.button2.Location = new System.Drawing.Point(29, 208);
-
-            this.button2.Name = "button2";
-
-            this.button2.Size = new System.Drawing.Size(116, 23);
-
-            this.button2.TabIndex = 2;
-
-            this.button2.Text = "Exit";
-
-            this.button2.UseVisualStyleBackColor = true;
-            */
-            // 
-
             // comboBox1
-
             // 
-
-            this.comboBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-
+            this.comboBox1.BackColor = System.Drawing.Color.Azure;
             this.comboBox1.FormattingEnabled = true;
-
-            this.comboBox1.Location = new System.Drawing.Point(29, 181);
-
+            this.comboBox1.Location = new System.Drawing.Point(32, 100);
             this.comboBox1.Name = "comboBox1";
-
-            this.comboBox1.Size = new System.Drawing.Size(116, 21);
-
+            this.comboBox1.Size = new System.Drawing.Size(125, 23);
             this.comboBox1.TabIndex = 3;
-
             this.comboBox1.Text = "Select Test";
-
             // 
-
             // menuStrip1
-
             // 
-
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-
             this.testToolStripMenuItem,
-
             this.measurementToolStripMenuItem,
-
             this.windowToolStripMenuItem,
-
             this.helpToolStripMenuItem});
-
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-
             this.menuStrip1.Name = "menuStrip1";
-
-            this.menuStrip1.Size = new System.Drawing.Size(584, 24);
-
+            this.menuStrip1.Size = new System.Drawing.Size(710, 24);
             this.menuStrip1.TabIndex = 4;
-
             this.menuStrip1.Text = "menuStrip1";
-
             // 
-
             // testToolStripMenuItem
-
             // 
-
             this.testToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-
             this.newTestToolStripMenuItem,
-
             this.startTestToolStripMenuItem,
-
             this.editTestToolStripMenuItem,
-
             this.printTestToolStripMenuItem,
-
             this.exitToolStripMenuItem});
-
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-
             this.testToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-
             this.testToolStripMenuItem.Text = "File";
-
             this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
-
             // 
-
             // newTestToolStripMenuItem
-
             // 
-
             this.newTestToolStripMenuItem.Name = "newTestToolStripMenuItem";
-
-            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-
+            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.newTestToolStripMenuItem.Text = "New Test";
-
+            this.newTestToolStripMenuItem.Click += new System.EventHandler(this.MnewTestMenuItemG_Click);
             // 
-
             // startTestToolStripMenuItem
-
             // 
-
             this.startTestToolStripMenuItem.Name = "startTestToolStripMenuItem";
-
-            this.startTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-
+            this.startTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.startTestToolStripMenuItem.Text = "Start Test";
-
+            this.startTestToolStripMenuItem.Click += new System.EventHandler(this.MstartG_Click);
             // 
-
             // editTestToolStripMenuItem
-
             // 
-
             this.editTestToolStripMenuItem.Name = "editTestToolStripMenuItem";
-
-            this.editTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-
+            this.editTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.editTestToolStripMenuItem.Text = "Edit Test";
-
+            this.editTestToolStripMenuItem.Click += new System.EventHandler(this.MeditTestItemG_Click);
             // 
-
             // printTestToolStripMenuItem
-
             // 
-
             this.printTestToolStripMenuItem.Name = "printTestToolStripMenuItem";
-
-            this.printTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-
+            this.printTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.printTestToolStripMenuItem.Text = "Print Test";
-
+            this.printTestToolStripMenuItem.Click += new System.EventHandler(this.MprintTestItemG_Click);
             // 
-
             // exitToolStripMenuItem
-
             // 
-
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.MendG_Click);
             // 
-
             // measurementToolStripMenuItem
-
             // 
-
             this.measurementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-
             this.readMeasurementToolStripMenuItem,
-
             this.loadMeasurementToolStripMenuItem,
-
             this.storeDataToolStripMenuItem});
-
             this.measurementToolStripMenuItem.Name = "measurementToolStripMenuItem";
-
             this.measurementToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-
             this.measurementToolStripMenuItem.Text = "Measurement";
-
             // 
-
             // readMeasurementToolStripMenuItem
-
             // 
-
             this.readMeasurementToolStripMenuItem.Name = "readMeasurementToolStripMenuItem";
-
             this.readMeasurementToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-
             this.readMeasurementToolStripMenuItem.Text = "Read Measurement";
-
+            this.readMeasurementToolStripMenuItem.Click += new System.EventHandler(this.MreadG_Click);
             // 
-
             // loadMeasurementToolStripMenuItem
-
             // 
-
             this.loadMeasurementToolStripMenuItem.Name = "loadMeasurementToolStripMenuItem";
-
             this.loadMeasurementToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-
             this.loadMeasurementToolStripMenuItem.Text = "Load Measurement";
-
+            this.loadMeasurementToolStripMenuItem.Click += new System.EventHandler(this.MloadMenuItemG_Click);
             // 
-
             // storeDataToolStripMenuItem
-
             // 
-
             this.storeDataToolStripMenuItem.Name = "storeDataToolStripMenuItem";
-
             this.storeDataToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-
             this.storeDataToolStripMenuItem.Text = "Store Data";
-
+            this.storeDataToolStripMenuItem.Click += new System.EventHandler(this.MstoreMenuItemG_Click);
             // 
-
             // windowToolStripMenuItem
-
             // 
-
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-
             this.windowToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-
             this.windowToolStripMenuItem.Text = "window";
-
             // 
-
             // helpToolStripMenuItem
-
             // 
-
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutBloodPressureMeasurementToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-
             this.helpToolStripMenuItem.Text = "Help";
-
             // 
-
+            // aboutBloodPressureMeasurementToolStripMenuItem
+            // 
+            this.aboutBloodPressureMeasurementToolStripMenuItem.Name = "aboutBloodPressureMeasurementToolStripMenuItem";
+            this.aboutBloodPressureMeasurementToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.aboutBloodPressureMeasurementToolStripMenuItem.Text = "About Blood pressure measurement";
+            this.aboutBloodPressureMeasurementToolStripMenuItem.Click += new System.EventHandler(this.MhelpMenuItemG_Click);
+            // 
+            // MexitBtnG
+            // 
+            this.MexitBtnG.BackColor = System.Drawing.Color.Azure;
+            this.MexitBtnG.Location = new System.Drawing.Point(32, 144);
+            this.MexitBtnG.Name = "MexitBtnG";
+            this.MexitBtnG.Size = new System.Drawing.Size(125, 23);
+            this.MexitBtnG.TabIndex = 5;
+            this.MexitBtnG.Text = "Exit";
+            this.MexitBtnG.UseVisualStyleBackColor = false;
+            this.MexitBtnG.Click += new System.EventHandler(this.MendG_Click);
+            // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.toolStripContainer1.ContentPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.MexitBtnG);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.StartTestButton);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.comboBox1);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.button1);
+            this.toolStripContainer1.ContentPanel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(185, 247);
+            this.toolStripContainer1.Location = new System.Drawing.Point(12, 102);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.Size = new System.Drawing.Size(185, 247);
+            this.toolStripContainer1.TabIndex = 7;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // Logo
+            // 
+            this.Logo.BackgroundImage = global::BloodPressureMeasurement.Properties.Resources.Pulse_Logo;
+            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Logo.Location = new System.Drawing.Point(0, 24);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(710, 72);
+            this.Logo.TabIndex = 8;
+            this.Logo.TabStop = false;
+            // 
             // Form1
-
             // 
-
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.ClientSize = new System.Drawing.Size(584, 361);
-
-            this.Controls.Add(this.comboBox1);
-
-            //this.Controls.Add(this.button2);
-
-            this.Controls.Add(this.button1);
-
-            this.Controls.Add(this.StartTestButton);
-
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::BloodPressureMeasurement.Properties.Resources.Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(710, 361);
+            this.Controls.Add(this.Logo);
+            this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
-
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-
             this.MainMenuStrip = this.menuStrip1;
-
             this.Name = "Form1";
-
             this.Text = "Blood Pressure Measurement";
-
             this.menuStrip1.ResumeLayout(false);
-
             this.menuStrip1.PerformLayout();
-
+            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
-
             this.PerformLayout();
 
         }
@@ -404,7 +293,10 @@
         private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-
+        private System.Windows.Forms.Button MexitBtnG;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.ToolStripMenuItem aboutBloodPressureMeasurementToolStripMenuItem;
     }
 }
 
