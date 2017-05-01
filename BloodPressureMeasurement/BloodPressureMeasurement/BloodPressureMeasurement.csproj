@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MfitnessTestG.cs" />
     <Compile Include="MMeasurementG.cs" />
     <Compile Include="MGenericTestG.cs" />
     <Compile Include="Blood Pressure Measurement.cs">
@@ -53,6 +54,7 @@
     <Compile Include="Blood Pressure Measurement.Designer.cs">
       <DependentUpon>Blood Pressure Measurement.cs</DependentUpon>
     </Compile>
+    <Compile Include="MschellongTestG.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Blood Pressure Measurement.resx">

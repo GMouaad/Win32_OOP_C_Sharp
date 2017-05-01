@@ -26,5 +26,10 @@ namespace BloodPressureMeasurement
         {
 
         }
+
+        private void ExitBtnClicked(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
