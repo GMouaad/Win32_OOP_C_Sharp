@@ -37,6 +37,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.StartTestButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -55,18 +56,15 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutBloodPressureMeasurementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MexitBtnG = new System.Windows.Forms.Button();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // StartTestButton
             // 
             this.StartTestButton.BackColor = System.Drawing.Color.Azure;
-            this.StartTestButton.Location = new System.Drawing.Point(32, 17);
+            this.StartTestButton.Location = new System.Drawing.Point(25, 139);
             this.StartTestButton.Name = "StartTestButton";
             this.StartTestButton.Size = new System.Drawing.Size(125, 23);
             this.StartTestButton.TabIndex = 0;
@@ -77,7 +75,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(32, 57);
+            this.button1.Location = new System.Drawing.Point(25, 178);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 23);
             this.button1.TabIndex = 1;
@@ -89,9 +87,9 @@
             // 
             this.comboBox1.BackColor = System.Drawing.Color.Azure;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 100);
+            this.comboBox1.Location = new System.Drawing.Point(25, 222);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 23);
+            this.comboBox1.Size = new System.Drawing.Size(125, 21);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Select Test";
             // 
@@ -211,32 +209,13 @@
             // MexitBtnG
             // 
             this.MexitBtnG.BackColor = System.Drawing.Color.Azure;
-            this.MexitBtnG.Location = new System.Drawing.Point(32, 144);
+            this.MexitBtnG.Location = new System.Drawing.Point(25, 267);
             this.MexitBtnG.Name = "MexitBtnG";
             this.MexitBtnG.Size = new System.Drawing.Size(125, 23);
             this.MexitBtnG.TabIndex = 5;
             this.MexitBtnG.Text = "Exit";
             this.MexitBtnG.UseVisualStyleBackColor = false;
             this.MexitBtnG.Click += new System.EventHandler(this.MendG_Click);
-            // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.BackColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripContainer1.ContentPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.MexitBtnG);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.StartTestButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.comboBox1);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.button1);
-            this.toolStripContainer1.ContentPanel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(185, 247);
-            this.toolStripContainer1.Location = new System.Drawing.Point(12, 102);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(185, 247);
-            this.toolStripContainer1.TabIndex = 7;
-            this.toolStripContainer1.Text = "toolStripContainer1";
             // 
             // Logo
             // 
@@ -254,20 +233,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::BloodPressureMeasurement.Properties.Resources.Background;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(710, 361);
+            this.ClientSize = new System.Drawing.Size(710, 407);
+            this.Controls.Add(this.MexitBtnG);
             this.Controls.Add(this.Logo);
-            this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.StartTestButton);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Blood Pressure Measurement";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -294,7 +274,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button MexitBtnG;
-        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.ToolStripMenuItem aboutBloodPressureMeasurementToolStripMenuItem;
     }

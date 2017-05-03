@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MpanelG.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MfitnessTestG.cs" />
     <Compile Include="MMeasurementG.cs" />
     <Compile Include="MGenericTestG.cs" />

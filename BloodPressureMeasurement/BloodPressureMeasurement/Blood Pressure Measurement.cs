@@ -51,7 +51,7 @@ namespace BloodPressureMeasurement
 
         private void MnewTestMenuItemG_Click(object sender, EventArgs e)
         {
-            
+            MGenericTestG MnewTestG = new MGenericTestG("Test" + MCounterG);
             MArrayG[MCounterG] = MnewTestG;
             if (MCounterG<11)
             {
