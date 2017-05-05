@@ -1,6 +1,6 @@
 ﻿namespace BloodPressureMeasurement
 {
-    partial class Form1
+    partial class MmainWindowG
     {
         /// <summary>
         /// Required designer variable.
@@ -20,13 +20,7 @@
             base.Dispose(disposing);
         }
 
-        MGenericTestG[] MArrayG = new MGenericTestG[10];
-        int MCounterG = 0;
-        private MGenericTestG currentTest;
-        public MGenericTestG MgetCurrentTestG()
-        {
-            return currentTest;
-        }
+        
        
 
         #region Windows Form Designer generated code
@@ -37,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MmainWindowG));
             this.StartTestButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -228,7 +222,7 @@
             this.Logo.TabIndex = 8;
             this.Logo.TabStop = false;
             // 
-            // Form1
+            // MmainWindowG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -244,7 +238,7 @@
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MmainWindowG";
             this.Text = "Blood Pressure Measurement";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BloodPressureMeasurement
 {
-    class MGenericTestG
+    public class MGenericTestG
     {
         private string name;
         private DateTime date;

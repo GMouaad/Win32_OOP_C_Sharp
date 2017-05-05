@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BloodPressureMeasurement
 {
-    class MMeasurementG
+    public class MMeasurementG
     {
         private int MpulseG;
         private int MsystolicG;

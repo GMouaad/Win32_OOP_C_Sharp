@@ -45,23 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MpanelG.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MdiagramG.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="MfitnessTestG.cs" />
     <Compile Include="MMeasurementG.cs" />
     <Compile Include="MGenericTestG.cs" />
-    <Compile Include="Blood Pressure Measurement.cs">
+    <Compile Include="MmainWindowG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Blood Pressure Measurement.Designer.cs">
-      <DependentUpon>Blood Pressure Measurement.cs</DependentUpon>
+    <Compile Include="MmainWindowG.Designer.cs">
+      <DependentUpon>MmainWindowG.cs</DependentUpon>
     </Compile>
     <Compile Include="MschellongTestG.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Blood Pressure Measurement.resx">
-      <DependentUpon>Blood Pressure Measurement.cs</DependentUpon>
+    <EmbeddedResource Include="MmainWindowG.resx">
+      <DependentUpon>MmainWindowG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

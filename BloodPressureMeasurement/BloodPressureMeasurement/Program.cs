@@ -16,12 +16,12 @@ namespace BloodPressureMeasurement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MmainWindowG());
 
             ///////////
-            MGenericTestG Test1 = new MGenericTestG("patientName", DateTime.Now);
-            MGenericTestG Test2 = new MGenericTestG("Mouaad", DateTime.Now);
-            MGenericTestG Test3 = new MGenericTestG("Asmae", DateTime.Now);
+            MGenericTestG Test1 = new MGenericTestG("patientName");
+            MGenericTestG Test2 = new MGenericTestG("Mouaad");
+            MGenericTestG Test3 = new MGenericTestG("Asmae");
 
             Test1.setName("patientName");
             Test2.setName("Mouaad");
