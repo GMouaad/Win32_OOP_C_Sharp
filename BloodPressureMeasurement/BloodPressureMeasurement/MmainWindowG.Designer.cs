@@ -96,7 +96,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(710, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(915, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,35 +116,35 @@
             // newTestToolStripMenuItem
             // 
             this.newTestToolStripMenuItem.Name = "newTestToolStripMenuItem";
-            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newTestToolStripMenuItem.Text = "New Test";
             this.newTestToolStripMenuItem.Click += new System.EventHandler(this.MnewTestMenuItemG_Click);
             // 
             // startTestToolStripMenuItem
             // 
             this.startTestToolStripMenuItem.Name = "startTestToolStripMenuItem";
-            this.startTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.startTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.startTestToolStripMenuItem.Text = "Start Test";
             this.startTestToolStripMenuItem.Click += new System.EventHandler(this.MstartG_Click);
             // 
             // editTestToolStripMenuItem
             // 
             this.editTestToolStripMenuItem.Name = "editTestToolStripMenuItem";
-            this.editTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.editTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editTestToolStripMenuItem.Text = "Edit Test";
             this.editTestToolStripMenuItem.Click += new System.EventHandler(this.MeditTestItemG_Click);
             // 
             // printTestToolStripMenuItem
             // 
             this.printTestToolStripMenuItem.Name = "printTestToolStripMenuItem";
-            this.printTestToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.printTestToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printTestToolStripMenuItem.Text = "Print Test";
             this.printTestToolStripMenuItem.Click += new System.EventHandler(this.MprintTestItemG_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.MendG_Click);
             // 
@@ -229,7 +229,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(710, 407);
+            this.ClientSize = new System.Drawing.Size(915, 535);
             this.Controls.Add(this.MexitBtnG);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.comboBox1);

@@ -16,10 +16,12 @@ namespace BloodPressureMeasurement
         public MmainWindowG()
         {
             InitializeComponent();
-            MmyDiagramG = new MdiagramG();
-            MmyDiagramG.Location = new Point(170,120);
-            MmyDiagramG.Size = new Size(700, 400);
-            MmyDiagramG.BackColor = Color.LightGray;
+            MmyDiagramG = new MdiagramG(this)
+            {
+                Location = new Point(170, 120),
+                Size = new Size(700, 400),
+                BackColor = Color.LightGray
+            };
             this.Controls.Add(MmyDiagramG);
 
         }
@@ -63,7 +65,7 @@ namespace BloodPressureMeasurement
 
         private void MreadG_Click(object sender, EventArgs e)
         {
-            McurrentTestG = MgetCurrentTestG();
+            //McurrentTestG = MgetCurrentTestG();
             McurrentTestG.MreadValuesG();
         }
 
